@@ -9,10 +9,10 @@
 */
 /* ------ Import Fonts ------ */
 
-/* Google Font: DM Serif Display, Jost  */
+/* Google Font: DM Serif Display, Jost, Roboto Condensed  */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 /* ------ Custom Tailwind Classes ------ */
 
@@ -57,8 +57,8 @@
 
 /* Heading Style Guide */
 h1, h2, h3, h4, h5, h6 {
-  font-family: DM Serif Display, serif;
-  color: #292F36;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: whitesmoke;
   font-weight: 800;
   line-height: 125%;
 }
@@ -73,7 +73,7 @@ h6 { font-size: 1.125rem; letter-spacing: 0.0225rem; }
 /* Paragraph Style Guide */
 p {
   font-family: Jost, sans-serif;
-  color: #4D5053;
+  color: whitesmoke;
   font-weight: 400;
   line-height: 150%;
   font-size: 1.375rem;
@@ -102,7 +102,7 @@ p {
 /* Splide Carousel Styling */
 
 .splide__pagination__page .is-active{
-  color: #292F36;
+  color: whitesmoke;
 }
 
 .splide__arrow__custom {

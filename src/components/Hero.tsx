@@ -18,6 +18,7 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
         break;
   }
 
+  console.log(blockData.heroImgMobile.data)
 
   return (
     <div id='HeroSection' key={id} className='items-center xxs:mx-auto xxxs:mx-0 min-w-[28] max-w-[1400px] mx-auto sm:px-10 xs:px-0 sm:mb-[100px] xxs:mb-[50px] mb-[50px]' >
@@ -51,14 +52,16 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
                   backgroundImage: `url(${slide.attributes.url})`,
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: 'cover',
+                  
                 }}>
-                <div className='flex flex-col text-left px-[50px] py-[200px] sm:gap-[21px] xs:gap-[20px]'>
-                  <h1 className='text-[#292F36] flex font-DM py-2 font-bold max-w-[450px] text-[65px]'>{blockData.title}</h1>
+                <div className='flex flex-col text-left px-[50px] py-[200px] '>
+                  <h1 className='text-white flex  font-bold max-w-[450px] text-[65px]'>{blockData.title}</h1>
+                  <h1 className='text-white flex  font-bold max-w-[450px] text-[45px]'>Software Developer</h1>
                   <div className='max-w-[450px] max-h-[66px]'><p>{blockData.body}</p></div>
                   <div>
                     <Link href={`/${blockData.button.href}`}>
                       <button className={`font-Jost flex justify-center items-center rounded-[18px] ${themeBtn} hover:bg-[#434950] w-[220px] 
-                      py-[26px] px-[39px] text-[18px]`}>
+                      py-[15px] px-[29px] text-[18px]`}>
                         {blockData.button.buttonLabel} 
                         <Image className='ml-[10px]' src={blockData.button.icon.data.attributes.url} width={19} height={17} alt='Button Icon'/>
                       </button>

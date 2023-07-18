@@ -31,10 +31,10 @@ const LeftRight = ({ blockData, id }: { blockData: any; id: any }) => {
         {/* Heading & Body */}
         <div className="flex flex-col gap-[33px]">
           <div className=" w-auto lg:max-w-[420px] font-DM font-bold">
-            <h1>{blockData.heading}</h1>
+            <h1 className="text-navy">{blockData.heading}</h1>
           </div>
           <div className="body w-auto lg:max-w-[472px] ">
-            <p>{blockData.body}</p>
+            <p className="text-navy">{blockData.body}</p>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ const LeftRight = ({ blockData, id }: { blockData: any; id: any }) => {
             target={blockData.button[0].target}
           >
             <div
-              className={` flex bg-[#292F36] py-[26px] px-[50px] text-white rounded-[18px] text-[18px] items-center gap-[10px] font-Jost hover:opacity-80 transition-all duration-300 `}
+              className={` flex bg-brown py-[26px] px-[50px] text-white rounded-[18px] text-[18px] items-center gap-[10px] font-Jost hover:opacity-80 transition-all duration-300 `}
             >
               <div>{blockData.button[0].buttonLabel}</div>
               <Image

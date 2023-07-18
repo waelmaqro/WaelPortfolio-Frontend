@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: any) {
   
   const res = await fetch(
     `${process.env.pageURL}[slug][$eq]=${slug}`,
-    { next: { revalidate: 300 } }
+    { next: { revalidate: 10 } }
   );
   strapiRawData = await res.json();
   const data = strapiRawData.data[0].attributes;
