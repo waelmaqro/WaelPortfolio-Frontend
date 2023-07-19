@@ -41,7 +41,7 @@ export default async function DynamicPage({ params }: any) {
   const data = strapiRawData.data[0].attributes;
 
   return (
-    <div className="h-200px my-20 mx-auto  text-white ">
+    <div className="h-200px my-20 mx-auto  text-light bg-light ">
       {BlockManager(data.blocks)}
     </div>
   );

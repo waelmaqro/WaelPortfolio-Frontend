@@ -54,18 +54,23 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
                   backgroundSize: 'cover',
                   
                 }}>
-                <div className='flex flex-col text-left px-[50px] py-[200px] '>
+                <div className='flex flex-col text-left pr-[50px] py-[200px] '>
+                  <div className='sm:bg-navy sm:max-w-[600px] pl-[50px] py-[50px] rounded-r-full flex flex-col text-left '>
+
+                 
+                  
                   <h1 className='text-white flex  font-bold max-w-[450px] text-[65px]'>{blockData.title}</h1>
                   <h1 className='text-white flex  font-bold max-w-[450px] text-[45px]'>Software Developer</h1>
                   <div className='max-w-[450px] max-h-[66px]'><p>{blockData.body}</p></div>
-                  <div>
+                  <div className='mt-4'>
                     <Link href={`/${blockData.button.href}`}>
-                      <button className={`font-Jost flex justify-center items-center rounded-[18px] ${themeBtn} hover:bg-[#434950] w-[220px] 
+                      <button className={`font-Jost flex justify-center items-center rounded-[18px] bg-brown hover:bg-opacity-60 transition duration-300 w-[220px] 
                       py-[15px] px-[29px] text-[18px]`}>
                         {blockData.button.buttonLabel} 
                         <Image className='ml-[10px]' src={blockData.button.icon.data.attributes.url} width={19} height={17} alt='Button Icon'/>
                       </button>
                     </Link>
+                  </div>
                   </div>
                 </div>
             </div>
@@ -104,12 +109,12 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
                     backgroundSize: 'cover',
                   }}>
                 <div className='flex flex-col text-left xxs:px-12 xxxs:px-6 py-[150px] gap-[30px] z-[5]'>
-                  <div className='text-[#292F36] flex font-DM font-bold max-w-[250px] text-[4.0625rem]'>{blockData.title}</div>
-                    <div className='max-w-[250px]'><p>{blockData.body}</p></div>
+                  <div><h1>{blockData.title}</h1></div>
+                    <div className='max-w-[250px]'><p className='text-[18px]'>{blockData.body}</p></div>
                     <div>
                       <Link href={`/${blockData.button.href}`}>  
-                        <button className={`font-Jost flex justify-center items-center rounded-[18px] ${themeBtn} md:w-[220px] xs:w-[75xpx]
-                        py-[24px] px-[39px] xxs:text-[18px] xxxs:text-[16px]`}>
+                        <button className={`font-Jost flex justify-center items-center rounded-[18px] bg-brown md:w-[220px] xs:w-[75xpx]
+                        py-[18px] px-[39px] xxs:text-[18px] xxxs:text-[16px]`}>
                           {blockData.button.buttonLabel} 
                           <Image className='ml-[10px]' src={blockData.button.icon.data.attributes.url} width={19} height={17} alt='Button Icon'/>
                         </button>

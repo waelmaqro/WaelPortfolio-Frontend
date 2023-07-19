@@ -50,15 +50,15 @@ const Testimonial: React.FC<TestimonialProps> = ({ blockData, id }) => {
 
   return (
     <div key={id} className='max-w-7xl mx-auto px-10 sm:mb-[150px] xxs:mb-[75px] mb-[37.5px]'>
-      <div className="bg-[#F4F0EC] sm:w-full sm:h-auto px-5" style={{ borderRadius: '70px', paddingTop: '3%', paddingBottom: '3%' }}>
+      <div className="bg-blue sm:w-full sm:h-auto px-5" style={{ borderRadius: '70px', paddingTop: '3%', paddingBottom: '3%' }}>
         <section className="flex flex-col items-center justify-center py-12 mx-auto max-w-1xl lg:max-w-6xl md:max-w-3xl  sm:h-64" style={{ width: '100%', height: '100%' }}>
-          <h1 className="text-5xl font-DM Serif Display text-center leading-[125%] tracking-[1px]" style={{ width: '50%', marginBottom: '10px' }}>{blockData.Title}</h1>
+          <h1 className="text-5xl  Serif Display text-center leading-[125%] tracking-[1px]" style={{ width: '50%', marginBottom: '10px' }}>{blockData.Title}</h1>
 
           <Splide id="three-testimonials"
             options={{
               perPage,
               perMove: 1,
-              pagination: true,
+              pagination: false,
               rewind: true,
               autoplay: true,
               interval: 3000,
@@ -74,8 +74,8 @@ const Testimonial: React.FC<TestimonialProps> = ({ blockData, id }) => {
             {blockData.reviews.map((element: any, index: any) => (
               <SplideSlide key={index} className='py-[50px]'>
                 <div
-                  style={{ border: '1px solid white', marginBottom: 'mb-4', borderRadius: '33px', display: 'flex', flexDirection: 'column', justifyContent: 'start', height: '339px' }}
-                  className='bg-[#FFFFFF] h-64 pl-9 w-[100%]'
+                  style={{ marginBottom: 'mb-4', borderRadius: '33px', display: 'flex', flexDirection: 'column', justifyContent: 'start', height: '339px' }}
+                  className='bg-navy h-64 pl-9 w-[100%]'
                 >
                   <div style={{ display: 'flex', marginBottom: '20px', marginTop: '55px' }}>
                     <div style={{ width: '75px', height: '75px', borderRadius: '50%', overflow: 'hidden', marginRight: '10px', marginBottom: '2.5%' }}>

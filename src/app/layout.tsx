@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import TopSection from '@/components/TopSection'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -35,13 +35,12 @@ export default async function RootLayout({
 
 
       
-      <body className={inter.className}>
-        {/* <TopSection globalData={await fetchGlobalData()} />
-        <Navbar globalData={await fetchGlobalData()} /> */}
+      <body className={`${inter.className} bg-light`}>
+        <Navbar globalData={await fetchGlobalData()} />
         
           {children}
 
-        {/* <Footer globalData={await fetchGlobalData()}/> */}
+        <Footer globalData={await fetchGlobalData()}/>
       </body>
     </html>
   )

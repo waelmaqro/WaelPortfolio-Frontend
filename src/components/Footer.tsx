@@ -35,7 +35,7 @@ export default function Footer({ globalData }: { globalData: any }) {
   )
 
   return (
-    <div className=''>
+    <div className='bg-blue pt-4'>
 
       {/* Main Footer */}
       <div className='flex sm:justify-between justify-start flex-wrap gap-8 max-w-7xl mx-auto px-10 ss:mb-24 mb-12'>
@@ -50,9 +50,7 @@ export default function Footer({ globalData }: { globalData: any }) {
               height={footerData.headerLogo.data.attributes.height} 
               loading='lazy'
               />
-            <h1 className=' ml-[10px]'>{footerData.footerTitle}</h1>
           </div>
-          <p className='max-w-[400px] mb-[31px]'>{footerData.footerSubtitle}</p>
           <div className='flex h-[23px] gap-14'>
             {footerData.socials.map(renderSocial)}
           </div>

@@ -8,7 +8,7 @@ const StatsElement = ({data, index}: {data: any, index: number}) => {
   const [animationTriggered, setAnimationTriggered] = useState(false)
 
   return (
-    <div key={index} className="flex flex-row flex-wrap justify-center items-center ">
+    <div key={index} className="flex flex-row  justify-center items-center ">
       <div className="flex flex-col gap-[16px] items-center justify-center">
 
         {/* Stats Number Animation */}
@@ -25,25 +25,16 @@ const StatsElement = ({data, index}: {data: any, index: number}) => {
               viewport={{ once: true }}
             >
               <div>
-                <span className="font-DM font-bold leading-[125%] text-[85px] text-[#CDA274]" ref={countUpRef} />
+                <span className="font-DM font-bold leading-[125%] text-[85px] text-light" ref={countUpRef} />
               </div>
             </motion.div>
           )}
         </CountUp>
 
         {/* Stat Description */}
-        <p className="text-[22px] font-Jost text-[#4D5053]">{data.body}</p>
+        <p className="text-[22px] font-Jost text-light text-center">{data.body}</p>
       </div>
 
-      {/* Divider */}
-      {data.divider.data && (
-        <img
-          src={data.divider.data.attributes.url}
-          alt={data.divider.data.attributes.alternativeText}
-          className="lg:px-[70px] md:px-[40px] sm:px-[20px] min-[0px]:hidden min-[850px]:block w-auto h-auto "
-
-        />
-      )}
 
     </div>
   )
@@ -53,7 +44,7 @@ const CompanyStats = ({ blockData, id }: { blockData: any; id: any }) => {
 
   return (
     <div
-      className="flex flex-col min-[850px]:flex-row justify-center items-center bg-[#F4F0EC] w-full max-w-screen min-[850px]:py-[160px] py-[80px] sm:mb-[200px] xxs:mb-[100px] xxxs:mb-[50px] overflow-hidden"
+      className="flex flex-col min-[850px]:flex-row justify-center items-center gap-[40px] bg-blue w-full max-w-screen min-[850px]:py-[160px] py-[80px] sm:mb-[200px] xxs:mb-[100px] xxxs:mb-[50px] overflow-hidden px-5 md:px-10"
       key={id}
     >
       {blockData.statComponent.map((stat: any, index: any) => 
