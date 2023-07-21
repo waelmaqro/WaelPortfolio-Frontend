@@ -48,7 +48,7 @@ export default function Navbar({ globalData }: any) {
 
   return (
     <div
-      className={`sm:text-left fixed  w-full flex justify-center items-center bg-blue px-10 z-[40] top-0`}
+      className={`sm:text-left fixed  w-full flex justify-center items-center bg-navy px-10 z-[40] top-0`}
     >
       {/* Desktop */}
       <div
@@ -173,7 +173,7 @@ export default function Navbar({ globalData }: any) {
             animate="visible"
             transition={{ ease: "easeOut", duration: 0.2 }}
             exit="exit"
-            className="fixed right-0 top-0 bottom-0 height[100%] bg-blue   p-2 w-screen transition-300 shadow-md px-10 py-10 "
+            className="fixed right-0 top-0 bottom-0 height[100%] bg-navy   p-2 w-screen transition-300 shadow-md px-10 py-10 "
           >
             <div className="flex justify-end py-3">
               <button onClick={() => setIsOpen(!isOpen)}>

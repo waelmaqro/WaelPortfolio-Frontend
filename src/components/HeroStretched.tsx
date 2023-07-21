@@ -29,7 +29,7 @@ export default function HeroStretched({ blockData, id, blogTitle }: { blockData:
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
                             }}>
-                                <div className='bg-white max-w-[520px] xxxs:px-[40px] sm:px-[80px] py-[41px] rounded-t-[37px]'>
+                                <div className='bg-navy max-w-[520px] xxxs:px-[40px] sm:px-[80px] py-[41px] rounded-t-[37px]'>
                                     <div className='flex-col justify-center items-center text-center'>
                                         <h1>{blockData.title}</h1>
                                         <p><Link href={'/home'}>Home </Link>{slug.map((crumb: any, index: number) => (

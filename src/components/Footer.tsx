@@ -35,10 +35,10 @@ export default function Footer({ globalData }: { globalData: any }) {
   )
 
   return (
-    <div className='bg-blue pt-4'>
+    <div className='bg-navy pt-4'>
 
       {/* Main Footer */}
-      <div className='flex sm:justify-between justify-start flex-wrap gap-8 max-w-7xl mx-auto px-10 ss:mb-24 mb-12'>
+      <div className='flex sm:justify-between justify-start flex-wrap gap-8 max-w-7xl mx-auto px-10 ss:my-24 my-12'>
 
         {/* Logo & Socials */}
         <div className='flex flex-col mb-7'>
