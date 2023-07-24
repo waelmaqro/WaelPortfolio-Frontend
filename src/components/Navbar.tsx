@@ -28,7 +28,7 @@ export default function Navbar({ globalData }: any) {
       if (window.scrollY > 10) {
         setPadding(25);
       } else {
-        setPadding(35);
+        setPadding(30);
       }
     };
 
@@ -54,7 +54,6 @@ export default function Navbar({ globalData }: any) {
       <div
         className={`flex justify-between flex-grow max-w-[1200px] items-center  mx-auto min-[0px]:hidden md:flex`}
         style={{
-    
           paddingTop: padding,
           paddingBottom: padding,
           transition: "padding 0.3s",
@@ -76,7 +75,7 @@ export default function Navbar({ globalData }: any) {
         <div
           className={`flex flex-row ${
             searchOpen ? "w-[950px]" : "w-[624px]"
-          } justify-between font-Jost text-light text-[22px] leading-[25px] items-center`}
+          } justify-between font-Jost text-light text-[18px] items-center`}
         >
           {data.NavbarLinks.map((data: any, index: any) =>
             data.DropdownLinks.length === 0 ? (
@@ -160,11 +159,10 @@ export default function Navbar({ globalData }: any) {
             width={24}
             loading="eager"
           />
-  
         </div>
 
         <button onClick={() => setIsOpen(!isOpen)}>
-          <MenuRoundedIcon fontSize="large" /> 
+          <MenuRoundedIcon fontSize="large" />
         </button>
         {isOpen && (
           <motion.div

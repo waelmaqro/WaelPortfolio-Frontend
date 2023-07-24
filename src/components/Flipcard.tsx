@@ -27,7 +27,7 @@ export default function Flipcard({
           {/* Front */}
           <div className="absolute w-[100%] h-[100%] no-backface rounded-[30px]">
             <Image
-              className="rounded-[30px]"
+              className="rounded-[30px] object-cover"
               src={data.profileImage.data.attributes.url}
               alt={data.profileImage.data.attributes.alternativeText}
               fill={true}
@@ -36,7 +36,7 @@ export default function Flipcard({
 
           {/* Back */}
           <div className="absolute w-[100%] h-[100%] bg-light rotateY-180 no-backface rounded-[30px]">
-            <div className="flex flex-col justify-between h-[100%] py-[70px]">
+            <div className="flex flex-col justify-start gap-4 h-[80%] py-[70px] px-2">
               <div>
                 <h3 className="text-navy">{data.name}</h3>
                 <p className="p-sm text-navy">{data.subtitle}</p>
