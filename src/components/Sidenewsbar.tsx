@@ -31,7 +31,7 @@ export default async function Sidenewsbar({ category }: any) {
               key={index}
             >
               <div
-                className={`border border-[#E7E7E7] md:p-5 sm:p-0 xxs:p-5 p-0 rounded-[62px] bg-white w-full md:w-[310px]  `}
+                className={`border border-[#E7E7E7] md:p-5 sm:p-0 xxs:p-5 p-0 rounded-[62px] bg-navy w-full md:w-[310px]  `}
               >
                 <div className="flex flex-col ">
                   <div className=" md:mb-5 sm:mb-2 xxs:mb-5 mb-2">

@@ -55,7 +55,7 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
                   
                 }}>
                 <div className='flex flex-col text-left pr-[50px] py-[200px] '>
-                  <div className='sm:bg-navy sm:max-w-[600px] pl-[50px] py-[50px] rounded-r-full flex flex-col text-left '>
+                  <div className='sm:bg-navy sm:bg-opacity-60 sm:max-w-[600px] pl-[50px] py-[50px] rounded-r-full flex flex-col text-left '>
 
                  
                   

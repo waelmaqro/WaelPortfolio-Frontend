@@ -73,9 +73,7 @@ export default function Navbar({ globalData }: any) {
         </Link>
 
         <div
-          className={`flex flex-row ${
-            searchOpen ? "w-[950px]" : "w-[624px]"
-          } justify-between font-Jost text-light text-[18px] items-center`}
+          className={`flex flex-row justify-between font-Jost text-light text-[18px] items-center  w-[624px]` }
         >
           {data.NavbarLinks.map((data: any, index: any) =>
             data.DropdownLinks.length === 0 ? (
@@ -127,24 +125,7 @@ export default function Navbar({ globalData }: any) {
               </Tooltip>
             )
           )}
-          <button
-            onClick={() => setSearchOpen(!searchOpen)}
-            className={`flex flex-row`}
-          >
-            <Image
-              src={data.searchIcon.data.attributes.url}
-              alt={data.searchIcon.data.attributes.alternativeText}
-              height={30}
-              width={30}
-              loading="lazy"
-            />
-          </button>
-          {searchOpen && (
-            <input
-              placeholder="Search..."
-              className="text-22px border-[#292F36] border-[1px] rounded-full p-1 px-4 max-w-[150px]"
-            />
-          )}
+          
         </div>
       </div>
 

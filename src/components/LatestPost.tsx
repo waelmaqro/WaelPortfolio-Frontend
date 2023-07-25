@@ -12,16 +12,18 @@ export async function LatesPost() {
   const parseDate = parseISO(date);
   const formattedDate = format(parseDate, "d, MMMM, yyyy");
 
-  const paragraphs: string[] = blog.attributes.content.split("\n\n");
-  const secondParagraph: string = paragraphs[1];
-  const description: string = secondParagraph.slice(0, 150);
+  // const paragraphs: string[] = blog.attributes.content.split("\n\n");
+  // const secondParagraph: string = paragraphs[1];
+  // const description: string = secondParagraph.slice(0, 150);
+
+  console.log()
 
   const ref = `/blogs/${blog.attributes.category.data.attributes.slug}/${blog.id}`;
   return (
     <div className="flex justify-center items-center">
-      <div className="flex justify-center flex-col gap-[27px]">
-        <h1>Latest Post</h1>
-        <div className="md:grid grid-cols-2 flex flex-col max-w-[1201px] gap-[27px] content-center md:border md:p-4 md:rounded-[60px] ">
+      <div className="flex justify-center flex-col gap-[27px] ">
+        <h1 className="text-navy">Latest Project</h1>
+        <div className="md:grid grid-cols-2 flex flex-col max-w-[1201px] gap-[27px] content-center md:border md:p-4 md:rounded-[60px] bg-navy ">
           <Link href={ref} replace={true} className="order-2 md:order-1">
             <Image
               src={blog.attributes.thumbnail.data.attributes.url}
@@ -38,8 +40,8 @@ export async function LatesPost() {
               <h2>{blog.attributes.blogTitle}</h2>
             </Link>
 
-            <p className="max-lines:4 text-ellipsis">
-              {description}...{" "}
+            <p className="text-ellipsis">
+              {blog.attributes.content.slice(0,150)}...
               <Link href={ref} replace={true}>
                 <span className="underline underline-offset-1 opacity-90 italic hover:opacity-60 cursor-pointer transition duration-300">
                   read more.

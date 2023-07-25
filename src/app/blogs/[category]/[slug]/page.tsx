@@ -1,10 +1,7 @@
-import CategoryButtons from "@/components/CategoryButtons";
-import Link from "next/link";
 import { remark } from "remark";
 import html from "remark-html"
 import HeroStretched from "@/components/HeroStretched";
 import Image from "next/image";
-import SearchComponent from "@/components/SearchComponent";
 import Sidenewsbar from "@/components/Sidenewsbar";
 
 export default async function DynamicPage({ params }: any) {
@@ -67,10 +64,10 @@ export default async function DynamicPage({ params }: any) {
         {/* Blog Content */}
         <div className="md:max-w-[800px] flex flex-col">
           {/* Title */}
-          <p className="p-md">{data.category.data.attributes.Category}</p>
-          <h1 className="mb-5">{data.blogTitle}</h1>
+          <p className="p-md text-navy">{data.category.data.attributes.Category}</p>
+          <h1 className="mb-5 text-navy">{data.blogTitle}</h1>
           <div className="flex justify-between mb-20">
-            <p className="p-xs">{data.timestamp}</p>
+            <p className="p-xs text-navy">{data.timestamp}</p>
             <Image
               src={data.authorIcon ? data.authorIcon.data.attributes.url : '/next.svg'}
               alt="image of author"
@@ -79,16 +76,9 @@ export default async function DynamicPage({ params }: any) {
               className="rounded-full"
             />
           </div>
-          {/* Thumbnail */}
-          <Image
-            className="w-[100%] rounded-[20px] mb-20"
-            src={data.thumbnail.data.attributes.url}
-            alt={data.thumbnail.data.attributes.alternativeText}
-            width={data.thumbnail.data.attributes.width}
-            height={data.thumbnail.data.attributes.height}
-          />
+         
           {/* Content */}
-          <div className="blog-container md:mb-20 " dangerouslySetInnerHTML={{ __html: await processContent(data.content) }} />
+          <div className="blog-container md:mb-20 "  dangerouslySetInnerHTML={{ __html: await processContent(data.content) }} />
         </div>
 
         {/* Side Bar */}

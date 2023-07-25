@@ -31,18 +31,18 @@ export default async function Page() {
   }
 
   return (
-    <div className="mt-[140px] mb-[200px]">
+    <div className="mt-[90px] mb-[200px]">
       {/* <ParallaxNews /> */}
       <HeroStretched blockData={heroData} id={1} blogTitle="" />
       <div className='px-10'>
         <LatesPost />
-        <div className="mb-20 ">
+        <div className="mb-5 ">
           <CategoryButtons blockData={blockData} />
         </div>
       </div>
       {/* Blogs section */}
       <div className="flex flex-col gap-[20px]">
-        <h1 className="text-center mx-auto">Blogs</h1>
+        <h1 className="text-center mx-auto text-navy">Projects</h1>
 
         <div className="flex justify-center items-center flex-col gap-[50px] md:px-10 px-5">
           <SearchComponent />

@@ -29,14 +29,14 @@ export default async function DynamicPage({ params }: any) {
 
   return (
 
-    <div className='mt-[140px] mb-[200px]'>
+    <div className='mt-[90px] mb-[200px]'>
       <HeroStretched blockData={heroData} id={1} blogTitle='' />
       <div className='flex flex-col justify-center items-center md:px-10 px-5'>
         <div className='max-w-7xl'>
           {/* Title */}
-          <h1 className='text-center'>{ldata.data[0].attributes.Category}</h1>
+          <h1 className='text-center text-navy'>{ldata.data[0].attributes.Category}</h1>
           <div className='mt-[20px]'>
-            <p className='p-md'>{ldata.data[0].attributes.body}</p>
+            <p className='p-md text-navy text-center'>{ldata.data[0].attributes.body}</p>
           </div>
 
           {/* Category List */}
