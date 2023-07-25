@@ -52,7 +52,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ blockData, id }) => {
     <div key={id} className='max-w-7xl mx-auto px-10 sm:mb-[150px] xxs:mb-[75px] mb-[37.5px]'>
       <div className="bg-blue sm:w-full sm:h-auto px-5" style={{ borderRadius: '70px', paddingTop: '3%', paddingBottom: '3%' }}>
         <section className="flex flex-col items-center justify-center py-12 mx-auto max-w-1xl lg:max-w-6xl md:max-w-3xl  sm:h-64" style={{ width: '100%', height: '100%' }}>
-          <h1 className="text-5xl  Serif Display text-center leading-[125%] tracking-[1px]" style={{ width: '50%', marginBottom: '10px' }}>{blockData.Title}</h1>
+          <h1 className="text-5xl  Serif Display text-center leading-[125%] tracking-[1px]" style={{ marginBottom: '10px' }}>{blockData.Title}</h1>
 
           <Splide id="three-testimonials"
             options={{

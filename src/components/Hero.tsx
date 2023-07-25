@@ -85,7 +85,7 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
         options={{
           rewind: true,
           width: 1200,
-          height:800,
+          height:635,
           gap: "2rem",
           perPage: 1,
           autoplay: true,

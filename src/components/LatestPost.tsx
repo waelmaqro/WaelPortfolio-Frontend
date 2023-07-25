@@ -23,14 +23,14 @@ export async function LatesPost() {
     <div className="flex justify-center items-center">
       <div className="flex justify-center flex-col gap-[27px] ">
         <h1 className="text-navy">Latest Project</h1>
-        <div className="md:grid grid-cols-2 flex flex-col max-w-[1201px] gap-[27px] content-center md:border md:p-4 md:rounded-[60px] bg-navy ">
+        <div className="md:grid grid-cols-2 flex flex-col max-w-[1201px] gap-[27px] content-center md:border md:p-4 md:rounded-[60px] bg-navy rounded-[30px] p-4">
           <Link href={ref} replace={true} className="order-2 md:order-1">
             <Image
               src={blog.attributes.thumbnail.data.attributes.url}
               alt={blog.attributes.thumbnail.data.attributes.alternativeText}
               height={blog.attributes.thumbnail.data.attributes.height}
               width={blog.attributes.thumbnail.data.attributes.width}
-              className="   w-[569px] h-[478px] object-cover rounded-[50px] "
+              className="   w-[569px] md:h-[478px] object-cover rounded-[50px] "
               priority={true}
             />
           </Link>

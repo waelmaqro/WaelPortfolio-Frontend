@@ -215,7 +215,7 @@ export default function Navbar({ globalData }: any) {
                                     onClick={() => setIsOpen(!isOpen)}
                                     className="font-Jost hover:opacity-50 w-full text-start flex justify-between items-center"
                                   >
-                                    {dropdownData.title}
+                                    <p className="text-light">{dropdownData.title}</p>
                                     <ArrowForwardIosRoundedIcon
                                       fontSize="small"
                                       className="text-[#292F36]"
@@ -273,7 +273,7 @@ export default function Navbar({ globalData }: any) {
                                     {dropdownData.title}
                                     <ArrowForwardIosRoundedIcon
                                       fontSize="small"
-                                      className="text-[#292F36]"
+                                      className="text-light"
                                     />
                                   </Link>
                                 </div>
