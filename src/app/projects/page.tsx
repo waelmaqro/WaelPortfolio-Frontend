@@ -4,7 +4,7 @@ import SearchComponent from "@/components/SearchComponent";
 import CategoryButtons from "@/components/CategoryButtons";
 import HeroStretched from "@/components/HeroStretched";
 import RecentBlogs from "@/components/RecentBlogs";
-import ParallaxNews from "@/components/ParallaxNews";
+
 
 const getCategories = async () => {
 

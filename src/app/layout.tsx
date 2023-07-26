@@ -8,8 +8,8 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Interno',
-  description: 'Let your home be unique',
+  title: 'Wael',
+  description: 'Welcome to my portfolio',
 }
 
 export async function fetchGlobalData() {
