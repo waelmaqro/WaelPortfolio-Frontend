@@ -97,7 +97,7 @@ export default function RecentBlogs() {
         {blogsData &&
           blogsData.data.map((data: any, index: any) => (
             <Link
-              href={`/blogs/${data.attributes.category.data.attributes.Category}/${data.id}`}
+              href={`/projects/${data.attributes.category.data.attributes.Category}/${data.id}`}
               key={index}
             >
               <div className="group border border-light   xxs:p-5  rounded-[62px] bg-navy hover:bg-light hover:border-navy transition duration-200 ">

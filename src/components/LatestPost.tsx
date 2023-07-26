@@ -18,7 +18,7 @@ export async function LatesPost() {
 
   console.log()
 
-  const ref = `/blogs/${blog.attributes.category.data.attributes.slug}/${blog.id}`;
+  const ref = `/projects/${blog.attributes.category.data.attributes.slug}/${blog.id}`;
   return (
     <div className="flex justify-center items-center">
       <div className="flex justify-center flex-col gap-[27px] ">

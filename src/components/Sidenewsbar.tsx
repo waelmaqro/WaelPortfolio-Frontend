@@ -27,7 +27,7 @@ export default async function Sidenewsbar({ category }: any) {
           .splice(0, 3)
           .map((category: any, index: any) => (
             <Link
-              href={`/blogs/${category.attributes.category.data.attributes.Category}/${category.id}`}
+              href={`/projects/${category.attributes.category.data.attributes.Category}/${category.id}`}
               key={index}
             >
               <div
@@ -102,7 +102,7 @@ export default async function Sidenewsbar({ category }: any) {
     key={index}
     className='rounded-full bg-[#F4F0EC] text-[#4D5053] px-4 py-2 mr-2 mb-2'
   >
-    <Link href={`/blogs/${item.attributes.slug}`}>{item.attributes.Category}</Link>
+    <Link href={`/projects/${item.attributes.slug}`}>{item.attributes.Category}</Link>
   </button>
 ))}
 </div>

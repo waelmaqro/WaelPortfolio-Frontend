@@ -92,7 +92,7 @@ export default function HeroStretched({ blockData, id, blogTitle }: { blockData:
                                     <h2>{blogTitle}</h2>
                                     <div><p><Link href={'/home'}>Home </Link>{slug.map((crumb: any, index: number) => (
                                         <span key={index}>
-                                            {index === len-2 ? <Link replace={true} href={`/blogs/${lowerCase(blockData.categoryID)}`}>/ {capitalFirstLetter(blockData.category)} </Link> : (index === len-1 ? <span>/ {capitalFirstLetter(blogTitle)}</span> : <Link href={`/${crumb}`} replace={true}>/ {capitalFirstLetter(crumb)} </Link> )}
+                                            {index === len-2 ? <Link replace={true} href={`/projects/${lowerCase(blockData.categoryID)}`}>/ {capitalFirstLetter(blockData.category)} </Link> : (index === len-1 ? <span>/ {capitalFirstLetter(blogTitle)}</span> : <Link href={`/${crumb}`} replace={true}>/ {capitalFirstLetter(crumb)} </Link> )}
                                         </span>
                                     ))}</p></div>
                                 </div>        

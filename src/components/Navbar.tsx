@@ -173,7 +173,7 @@ export default function Navbar({ globalData }: any) {
                     onClick={() => setIsOpen(!isOpen)}
                   >
                     <p className="text-[20px]">{data.title}</p>
-                    <ArrowForwardIosRoundedIcon className="text-[#292F36]" />
+                    <ArrowForwardIosRoundedIcon className="text-light" />
                   </Link>
                 ) : (
                   <div key={index} className="w-full border-b-[1px]">

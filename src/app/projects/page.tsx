@@ -17,13 +17,13 @@ const getCategories = async () => {
 export default async function Page() {
   const blockData = await getCategories();
   let heroData = {
-    title: "Blogs",
+    title: "Projects",
     heroImg: {
       data: {
         attributes: {
           name: "heroContact.webp",
           alternativeText: "Hero Image for blog",
-          url: "https://res.cloudinary.com/ds6szmrgb/image/upload/v1688352554/hero_Contact_c499b30b1b.webp",
+          url: "https://res.cloudinary.com/ds6szmrgb/image/upload/v1689896481/photo_1636956026491_86a9da7001c9_f990cc475a.avif",
         }
       }
     }

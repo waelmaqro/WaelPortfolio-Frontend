@@ -38,7 +38,7 @@ export default function ArticleCard({
 
   return (
     <div>
-      <Link href={`/blogs/${data.category.data.attributes.slug}/${blog}`}>
+      <Link href={`/projects/${data.category.data.attributes.slug}/${blog}`}>
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 50 }}

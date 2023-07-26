@@ -28,7 +28,7 @@ export default function SearchComponent() {
       options={categoryData.data.map((category: any) => category)}
       getOptionLabel={(option) => option.attributes.Category}
       onChange={(event: any, option: any) => {
-        router.replace("/blogs/" + option.attributes.slug);
+        router.replace("/projects/" + option.attributes.slug);
       }}
       forcePopupIcon={false}
       sx={{ width: 300 }}

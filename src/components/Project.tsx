@@ -42,16 +42,16 @@ export default function Project({
     let cornerStyling = "";
     switch (cardData.curveCorner) {
       case "topLeft":
-        cornerStyling = "rounded-tl-[80px]";
-        break;
-      case "topRight":
         cornerStyling = "rounded-tr-[80px]";
         break;
+      case "topRight":
+        cornerStyling = "rounded-tl-[80px]";
+        break;
       case "bottomLeft":
-        cornerStyling = "rounded-bl-[80px]";
+        cornerStyling = "rounded-br-[80px]";
         break;
       case "bottomRight":
-        cornerStyling = "rounded-br-[80px]";
+        cornerStyling = "rounded-bl-[80px]";
         break;
     }
     return (
@@ -83,7 +83,7 @@ export default function Project({
                 <p className="text-navy  text-start max-w-[250px] sm:w-full">{cardData.category}</p>
               </div>
 
-              <div className="bg-brown p-4 rounded-full flex justify-center items-center sm:w-[70px] sm:h-[70px] w-[35px] h-[35px] mx-1 ">
+              <div className="bg-blue p-4 rounded-full flex justify-center items-center sm:w-[70px] sm:h-[70px] w-[35px] h-[35px] mx-1 ">
                 <Image
                   className="sm:w-[25px] sm:h-[25px] w-[12px] h-[12px] hover:opacity-60"
                   src={iconImage.url}

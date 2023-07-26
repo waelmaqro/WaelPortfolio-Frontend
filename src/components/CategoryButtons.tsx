@@ -28,7 +28,7 @@ export default function CategoryButtons({ blockData }: { blockData: any }) {
             key={index}
             className='rounded-full bg-[#F4F0EC] text-[#4D5053] px-4 py-2 mr-2 mb-2'
           >
-            <Link href={`/blogs/${item.attributes.slug}`}>{item.attributes.Category}</Link>
+            <Link href={`/projects/${item.attributes.slug}`}>{item.attributes.Category}</Link>
           </button>
         ))}
       </div>
