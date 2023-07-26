@@ -29,7 +29,7 @@ export default async function DynamicPage({ params }: any) {
 
   return (
 
-    <div className='mt-[90px] mb-[200px]'>
+    <div className='mt-[40px] md:mt-[86px] mb-[200px]'>
       <HeroStretched blockData={heroData} id={1} blogTitle='' />
       <div className='flex flex-col justify-center items-center md:px-10 px-5'>
         <div className='max-w-7xl'>

@@ -57,7 +57,7 @@ export default async function DynamicPage({ params }: any) {
   }
 
   return (
-    <div className="mx-auto xxxs:mt-[100px] md:mt-[140px] mb-[100px]">
+    <div className="mx-auto mt-[40px] md:mt-[85px] mb-[100px]">
       <HeroStretched blockData={heroData} id={3} blogTitle={data.blogTitle} />
       <div className="max-w-7xl mx-auto px-5 md:px-10 flex flex-col md:flex-row md:gap-[52px] gap-[25px] justify-center items-start">
 

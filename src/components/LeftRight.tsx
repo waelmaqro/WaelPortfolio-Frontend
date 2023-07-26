@@ -70,7 +70,7 @@ const LeftRight = ({ blockData, id }: { blockData: any; id: any }) => {
             target={blockData.button[0].target}
           >
             <div
-              className={` flex bg-brown py-[26px] px-[50px] text-white rounded-[18px] text-[18px] items-center gap-[10px] font-Jost hover:opacity-80 transition-all duration-300 `}
+              className={` flex bg-brown py-[26px] items-center justify-center text-white rounded-[18px] text-[18px] items-center gap-[10px] font-Jost hover:opacity-80 transition-all duration-300 w-[200px]`}
             >
               <div>{blockData.button[0].buttonLabel}</div>
               <Image

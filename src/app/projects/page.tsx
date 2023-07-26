@@ -31,7 +31,7 @@ export default async function Page() {
   }
 
   return (
-    <div className="mt-[90px] mb-[200px]">
+    <div className="mt-[40px] md:mt-[85px] mb-[200px]">
       {/* <ParallaxNews /> */}
       <HeroStretched blockData={heroData} id={1} blogTitle="" />
       <div className='px-10'>

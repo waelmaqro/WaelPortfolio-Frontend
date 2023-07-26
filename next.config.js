@@ -25,7 +25,7 @@ const nextConfig = {
     pageURL: 'https://waelportfolio-backend.onrender.com/api/pages?populate=deep&filters', // Live server
      //baseURL: 'http://127.0.0.1:1337', // Local server
      //pageURL: 'http://127.0.0.1:1337/api/pages?populate=deep&filters', // Local server
-    latestBlog: 'https://waelportfolio-backend.onrender.com/api/blogs?sort[0]=createdAt%3Adesc&pagination[page]=1&pagination[pageSize]=1&populate=deep,2',
+    latestBlog: 'https://waelportfolio-backend.onrender.com/api/blogs?sort[0]=timestamp:desc&pagination[page]=1&pagination[pageSize]=1&populate=deep,2',
     latest6Blogs: 'https://waelportfolio-backend.onrender.com/api/blogs?filters[timestampt]&sort[0]=timestamp:desc&',
     getAllCategories: 'https://waelportfolio-backend.onrender.com/api/categories?sort[0]=id%3Aasc&pagination[page]=1&pagination[pageSize]=51&populate=deep,1',
     getAllProjects: 'https://waelportfolio-backend.onrender.com/api/project-categories?sort[0]=id%3Aasc&pagination[page]=1&pagination[pageSize]=51&populate=deep,1',
