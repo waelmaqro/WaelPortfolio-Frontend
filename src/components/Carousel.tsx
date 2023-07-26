@@ -11,6 +11,7 @@ export default function CarouselComponent({ blockData }: any) {
         options={{
           rewind: true,
           width: 800,
+          height: 200,
           gap: "1rem",
           perPage: 1,
           autoplay: true,
@@ -33,7 +34,7 @@ export default function CarouselComponent({ blockData }: any) {
               key={index}
               fill={true}
               loading="lazy"
-              className=""
+           
               
             />
           </SplideSlide>

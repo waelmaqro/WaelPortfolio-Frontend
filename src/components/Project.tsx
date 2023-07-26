@@ -65,11 +65,12 @@ export default function Project({
         whileInView={{ opacity: 1, x: 0, display: "block" }}
         transition={{ ease: "easeIn", duration: 0.6 }}
         viewport={{ once: true }}
+        className="group bg-navy rounded-t-[80px] rounded-b-[10px] p-4 transition duration-300"
       >
         <button className="w-[100%]" onClick={handleClicked}>
           <div className="flex flex-col">
             <Image
-              className={`w-[100%] mb-7 ${cornerStyling}`}
+              className={`w-[100%] mb-7 ${cornerStyling} rounded-[80px]`}
               src={cardImage.url}
               alt={cardImage.alternativeText}
               width={cardImage.width}
@@ -79,11 +80,11 @@ export default function Project({
 
             <div className="flex justify-between">
               <div className="flex flex-col items-start">
-                <h3 className="mb-1 text-navy text-start max-w-[250px] sm:w-full">{cardData.title}</h3>
-                <p className="text-navy  text-start max-w-[250px] sm:w-full">{cardData.category}</p>
+                <h3 className="mb-1 text-light text-start max-w-[250px] sm:w-full">{cardData.title}</h3>
+                <p className="text-light  text-start max-w-[250px] sm:w-full">{cardData.category}</p>
               </div>
 
-              <div className="bg-blue p-4 rounded-full flex justify-center items-center sm:w-[70px] sm:h-[70px] w-[35px] h-[35px] mx-1 ">
+              <div className="bg-blue transition-all p-4 border-4 group-hover:border-8 border-gray-700 border-opacity-30 rounded-full flex justify-center items-center sm:w-[70px] sm:h-[70px] w-[35px] h-[35px] mx-1 ">
                 <Image
                   className="sm:w-[25px] sm:h-[25px] w-[12px] h-[12px] hover:opacity-60"
                   src={iconImage.url}

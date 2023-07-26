@@ -19,30 +19,35 @@ export default function Hero({ blockData, id }: { blockData: any, id: any}) {
   }
 
   console.log(blockData.heroImgMobile.data)
+  
+  
 
   return (
-    <div id='HeroSection' key={id} className='items-center xxs:mx-auto xxxs:mx-0 min-w-[28] max-w-[1400px] mx-auto sm:px-10 xs:px-0 sm:mb-[100px] xxs:mb-[50px] mb-[50px]' >
+    <div id='HeroSection' key={id} className='items-center xxs:mx-auto xxxs:mx-0 min-w-[28] max-w-[1400px] mx-auto sm:px-10 xs:px-0 sm:mb-[100px] xxs:mb-[50px] mb-[50px] min-[770px]:mt-[120px]' >
       
       {/* Desktop Hero section */}
       <Splide
         hasTrack={ false }     
         options={{
-          rewind: true,
+
           width: 1200,
           height:800,
           gap: "2rem",
           perPage: 1,
           autoplay: true,
-          type: "loop",
           arrows:false,
+          direction: 'ttb',
+          wheel: true,
+          releaseWheel: true,
+          
         }}
-        className='min-h-[800px] mx-auto p-6 min-[50px]:hidden xxxs:hidden xxs:hidden xs:hidden min-[530px]:block sm:block'
+        className='min-h-[800px] mx-auto px-6 py-8 min-[50px]:hidden xxxs:hidden xxs:hidden xs:hidden min-[530px]:block sm:block bg-blue rounded-[70px] '
       >
         <SplideTrack>
         {blockData.heroImgMain.data.map((slide: any, index: any) => (
           <SplideSlide
             key={index}
-            className="flex justify-center items-center py-5"
+            className="flex justify-center items-center px-5"
           >
 
             <div 
