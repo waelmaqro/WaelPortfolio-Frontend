@@ -39,7 +39,7 @@ export default function Features({
             {blockData.featureCard.map((card: any, index: number) => {
               return (
                 <SplideSlide
-                  className="p-11 mt-6 mx-auto  min-[1200px]:w-[1100px] w-full  text-center justify-between items-center flex min-[700px]:flex-row flex-col xs:py-10 xxs:py-8 xxxs:py-8  bg-light rounded-[50px] gap-[20px] md:px-[100px]"
+                  className="p-11 mt-6 mx-auto  min-[1200px]:w-[1100px] w-full  text-center justify-between items-center flex min-[700px]:flex-row flex-col xs:py-10 xxs:py-8 xxxs:py-8  bg-light border-[5px] border-gray-500 rounded-[50px] gap-[20px] md:px-[100px]"
                   key={index}
                 >
                   <h3 className="text-navy min-[700px]:text-start">{card.title}</h3>
@@ -47,7 +47,7 @@ export default function Features({
                     <p className="text-navy">{card.body}</p>
                   </div>
                   <div className="justify-center flex text-center  ">
-                    <Link href={card.button.href}>
+                    <Link href={card.button.href} target={card.button.target}>
                       <button className={`flex items-center justify-center `}>
                         <Image
                           className="ml-[10px] w-[40px] md:w-[90px]"

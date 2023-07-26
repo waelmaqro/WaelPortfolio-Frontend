@@ -72,17 +72,17 @@ const Testimonial: React.FC<TestimonialProps> = ({ blockData, id }) => {
             className="grid grid-cols-1 mx-auto gap-5 mt-8"
           >
             {blockData.reviews.map((element: any, index: any) => (
-              <SplideSlide key={index} className='py-[50px]'>
+              <SplideSlide key={index} className='group py-[50px]'>
                 <div
                   style={{ marginBottom: 'mb-4', borderRadius: '33px', display: 'flex', flexDirection: 'column', justifyContent: 'start', height: '339px' }}
                   className='bg-navy h-64 pl-9 w-[100%]'
                 >
                   <div style={{ display: 'flex', marginBottom: '20px', marginTop: '55px' }}>
-                    <div style={{ width: '75px', height: '75px', borderRadius: '50%', overflow: 'hidden', marginRight: '10px', marginBottom: '2.5%' }}>
+                    <div  className='bg-gray-500 flex justify-center items-center w-[60px] h-[60px] rounded-full group-hover:p-[7px] group-hover:bg-opacity-50 transition-all duration-300 '>
                       <Image
                         src={element.profilePic.data.attributes.url}
                         alt={element.name}
-                        style={{ width: '305px', height: 'auto', objectFit: 'cover' }}
+                        className='rounded-full w-[50px] object-cover  '
                         width={305}
                         height={300}
                         priority
